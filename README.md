@@ -4,7 +4,7 @@ This web application is written in HTML, CSS, & JavaScript. We are using JavaScr
 
 ## Installation
 
-Download the ZIP to your desired directory here:
+Download the ZIP file to your desired directory with the following link:
 
 ```bash
 https://github.com/Uberck/Cisco-Reddit-API/archive/master.zip
