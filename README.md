@@ -4,7 +4,7 @@ This web application is written in HTML, CSS, & JavaScript. We are using JavaScr
 
 ## Installation
 
-Download the ZIP to your desired directory here: [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Download the ZIP to your desired directory here:
 
 ```bash
 https://github.com/Uberck/Cisco-Reddit-API/archive/master.zip
@@ -15,7 +15,7 @@ https://github.com/Uberck/Cisco-Reddit-API/archive/master.zip
 ```python
 import foobar
 
-foobar.pluralize('word') # returns 'words'
+The site can be hosted locally or remotely using webserver/cloud service of choice (Apache, IIS, AWS, etc.)
 foobar.pluralize('goose') # returns 'geese'
 foobar.singularize('phenomena') # returns 'phenomenon'
 ```
