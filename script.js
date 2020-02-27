@@ -5,10 +5,10 @@
 //max articles per request (up to 25 posts at a time per subreddit API)
 const articlesPerRequest = 10;
 
-//declare responses variable
+//declare responses variable to store fetched JSON data
 const responses = [];
 
-//Handle user submission, fetch JSON data from reddit
+//Handle user submission
 const handleSubmit = e => {
   e.preventDefault();
   const subreddit = document.getElementById('subreddit').value;
@@ -25,7 +25,7 @@ const fetchArticles = async (subreddit) => {
   displayResults(responses[0]);
 };
 
-//generate HTML list for loop
+//generate HTML list for loop (display responses & format data)
 const displayResults = responses => {
   const container = document.getElementById('results-container');
   for (var i=0; i<responses.data.children.length; i++)
