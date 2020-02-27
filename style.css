@@ -1,0 +1,31 @@
+/* Christos Kokkalis 2020 */
+body {
+  text-align: center;
+  color: #0079d3;
+}
+
+button {
+  background-color: #0079d3;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+
+#reload {
+  background-color: #0079d3;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+
+#results-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card {
+  text-decoration: none;
+  padding: 5px;
+  border: solid 1px #0079d3;
+  margin: 5px auto;
+}
