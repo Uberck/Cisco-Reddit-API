@@ -17,3 +17,9 @@ Create a directory where you plan on storing the web application and unzip maste
 
 ## Overview
 The application works by executing a JavaScript script that stores logic to access the Reddit API, fetch the required data based on the user's input on an HTML form, and generate a list based on that input.
+
+This web app is also hosten on AWS, and can be accessed with the following URL:
+
+```bash
+https://cppc-east-01.s3.amazonaws.com/index.html
+```
