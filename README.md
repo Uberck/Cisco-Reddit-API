@@ -16,6 +16,7 @@ Create a directory where you plan on storing the web application and unzip maste
 
 ## Usage
 After launching "index.html" in your desired mobile or desktop browser, simply enter your favorite Subreddit in the input form and click/tap the Fetch button.
+
 *Please note that for the time being, the Refresh Page button must be clicked/tapped for proper function to resume (reload after every search)
 
 
