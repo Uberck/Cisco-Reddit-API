@@ -12,11 +12,12 @@
 
 <body>
   <h1>Top 10 Subreddit Articles</h1>
+  <h3>Please enter your favorite Subreddit to get started:</h3>
   <form id="subreddit-select-form">
     <label>r/</label>
     <input id="subreddit" placeholder="Enter Subreddit here!">
-    <button type="submit">Rank</button>
-    <input id="reload" type="button" onClick="history.go(0)" value="Refresh Page">
+    <button type="submit">Fetch</button>
+    <input id="reload" type="button" title="Please use this button to reload the page." onClick="history.go(0)" value="Refresh Page">
   </form>
   <div id="results-container">
 
