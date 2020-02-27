@@ -2,20 +2,20 @@
 // The following JavaScript code handles a user submission from an input field, fetches the requested JSON objects from
 // Reddit's public API, and displays the top 10 results in HTML format with CSS styling
 
-//max articles per request (up to 25 posts at a time per subreddit API)
+// Max articles per request (up to 25 posts at a time per subreddit API)
 const articlesPerRequest = 10;
 
-//declare responses variable to store fetched JSON data
+// Declare responses variable to store fetched JSON data
 const responses = [];
 
-//Handle user submission
+// Handle user submission
 const handleSubmit = e => {
   e.preventDefault();
   const subreddit = document.getElementById('subreddit').value;
   fetchArticles(subreddit);
 };
 
-//Access reddit API, fetch data
+// Access reddit API, fetch data
 const fetchArticles = async (subreddit) => {
   const response = await fetch(
     `https://www.reddit.com/r/${subreddit}/top.json?limit=${articlesPerRequest}`
@@ -25,7 +25,7 @@ const fetchArticles = async (subreddit) => {
   displayResults(responses[0]);
 };
 
-//generate HTML list for loop (display responses & format data)
+// Generate HTML list for loop (display responses & format data)
 const displayResults = responses => {
   const container = document.getElementById('results-container');
   for (var i=0; i<responses.data.children.length; i++)
@@ -40,6 +40,6 @@ const displayResults = responses => {
   }
 }
 
-//Event listener
+// Event listener
 const subredditSelectForm = document.getElementById('subreddit-select-form');
 subredditSelectForm.addEventListener('submit', handleSubmit);
